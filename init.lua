@@ -44,11 +44,3 @@ for _, row in ipairs(clay.dyes) do
 		})
 	end
 end
-
-if core.get_modpath( 'moreblocks' ) then
-	local dyes = {}
-	for _, row in ipairs(clay.dyes) do
-		table.insert( dyes, row[1] )
-	end
-	stairsplus.register_nodes ( 'bakedclay', dyes )
-end
